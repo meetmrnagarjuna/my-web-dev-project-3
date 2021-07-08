@@ -1,0 +1,93 @@
+<html>
+<head>
+<link rel="stylesheet"href="index1.css">
+</head>
+<body>
+<p>
+<form method=" ">
+<label for ="fullname">Full name</label>
+<div class="ex">
+<input type="text"id="fullname"name=" "placeholder="Enter Your First Name"required></br>
+</div>
+</p>
+<p>
+<label for="secret pin">Secret Pin</label>
+<div class="exa">
+<input type="number" id="secret pin"name=""placeholder="Enter Your Secret Pin"></br>
+</div></p>
+<p></p>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Registration form
+	</title>
+</head>
+
+<body>
+	<p>
+		Select a radio button and click on Submit.
+	</p>
+	
+	Gender:
+	<input type="radio" name="gender" value="Male">Male
+	<input type="radio" name="gender" value="Female">Female
+	
+	
+	<br>
+	
+	<button type="button" onclick="displayRadioValue()">
+		Submit
+	</button>
+	
+	<br>
+	
+	<div id="result"></div>
+	
+	<script>
+		function displayRadioValue() {
+			var ele = document.getElementsByName('gender');
+			
+			for(i = 0; i < ele.length; i++) {
+				if(ele[i].checked)
+				document.getElementById("result").innerHTML
+						= "Selected Gender: "+ele[i].value;
+			}
+		}
+	</script>
+</body>
+</html>					
+
+
+
+I am an expert in 
+<input type="checkbox"name=""value="HTML">
+<label for="HTML">HTML</label>
+
+<input type="checkbox"value="css">
+<label for="CSS">CSS</label></br>
+
+<div class="select">
+My field of study is
+<select name="slct" id="slct">
+
+<option>select your branch using this select drop-down</option>
+<option value="B.tech">B.tech</option>
+<option value="M.tech">M.tech</option>
+<option value="Msc">Msc</option>
+</select>
+</div>
+</br>
+<p>
+tell  more about yourself:</br>
+</P>
+<div class="ex1">
+<textarea rows="5" cols="60"placeholder="this is text area.Enter your description"></textarea>
+</div>
+</br>
+<button class="button">submit form</button>
+</form>
+</body>
+</html>
